@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Delivery App</string>
+    <string name="verbutton_name">Verify</string>
+    <string name="enter_code">Enter 6-digit Code</string>
+</resources>
