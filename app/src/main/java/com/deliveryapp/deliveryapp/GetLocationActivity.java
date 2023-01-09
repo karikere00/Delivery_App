@@ -13,4 +13,5 @@ public class GetLocationActivity extends AppCompatActivity {
     }
 
     // testing
+    // testing 2
 }
