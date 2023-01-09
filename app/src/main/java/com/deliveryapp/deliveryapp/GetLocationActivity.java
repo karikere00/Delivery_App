@@ -11,4 +11,6 @@ public class GetLocationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_location);
     }
+
+    // testing
 }
