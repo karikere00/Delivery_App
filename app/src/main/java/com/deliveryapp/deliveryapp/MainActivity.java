@@ -10,6 +10,8 @@ import android.widget.Button;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
+import com.deliveryapp.deliveryapp.StringSet;
+
 public class MainActivity extends AppCompatActivity {
 //Nishu
     @Override
@@ -26,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             //Checks user input
             public void onClick(View view) {
                 String input = textInputEditText.getText().toString();
-                if (input.length() == 6) {
+                if (StringSet.isInSet(input)) {
                     // Proceed to next screen
                     //Intent object is created
                     Intent intent = new Intent(MainActivity.this, GetLocationActivity.class);
@@ -34,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
 
                 } else {
-                    textInputLayout.setError("Enter a 6-digit code");
+                    textInputLayout.setError("Enter 6-digit order number");
                 }
             }
         });
