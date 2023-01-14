@@ -30,14 +30,25 @@ android {
 
 dependencies {
 
+
+    implementation "com.google.android.gms:play-services-location:21.0.1"
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-    implementation ‘com.google.android.gms:play-services-location:17.0.0’
-    testImplementation ‘junit:junit:4.12’
-    androidTestImplementation ‘androidx.test.ext:junit:1.1.1’
-    androidTestImplementation ‘androidx.test.espresso:espresso-core:3.2.0’
+    // initially had     testImplementation ‘junit:junit: 4.12’ but this caused more errors,
+    // took it out to reduce errors
+    // version for junit is likely a cause of errors in .gradle, 4.12
+
+    // initially had     androidTestImplementation ‘androidx.test.ext:junit:1.1.2’ but this caused
+    // more errors, took it out to reduce errors
+
+    // junit was initially 1.1.1 but this didn't change errors
+
+    //  initially had androidTestImplementation ‘androidx.test.espresso:espresso-core:3.3.0’ but
+    //  this caused more errors, took it out to reduce errors
+    // initially was 3.2.0 but this didn't change errors
+
 }
