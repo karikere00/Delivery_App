@@ -4,7 +4,7 @@ import java.util.Set;
 import java.util.HashSet;
 
 public class StringSet {
-    private static Set<String> strings = new HashSet<>();
+    private static final Set<String> strings = new HashSet<>();
 
     static {
         strings.add("235564");
