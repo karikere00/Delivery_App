@@ -1,5 +1,17 @@
 <resources>
     <string name="app_name">Delivery App</string>
     <string name="verbutton_name">Verify</string>
-    <string name="enter_code">Enter 6-digit Code</string>
+    <string name="enter_code">Enter 6-digit Order Number</string>
+    <string name="next_button">Next</string>
+    <string name="first_instruction1">Congratulations! You have successfully ordered a delivery!</string>
+    <string name="first_instruction2">Please follow the next steps!</string>
+    <string name="second_instruction1">Please retrieve your drone landing mat.</string>
+    <string name="second_instruction2">Place your mat on the closest flat surface to</string>
+    <string name="second_instruction3">the place where you sent your location.</string>
+    <string name="third_instruction1">Please remain at your location.</string>
+    <string name="third_instruction2">Your order will arrive soon.</string>
+    <string name="fourth_instruction1">During the delivery, the drone will land, release your package, and then take off. Please remain at least 10 feet away from the landing site during delivery.</string>
+    <string name="previous_instruction">Previous</string>
+    <string name="get_location">Get Location</string>
+    <string name="location_display">Location Display</string>
 </resources>
