@@ -4,16 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
-import com.deliveryapp.deliveryapp.StringSet;
+import java.util.Objects;
+
 
 public class MainActivity extends AppCompatActivity {
-//Nishu
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,21 +23,18 @@ public class MainActivity extends AppCompatActivity {
         TextInputEditText textInputEditText = findViewById(R.id.textInputEditText);
         Button button = findViewById(R.id.button);
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            //Checks user input
-            public void onClick(View view) {
-                String input = textInputEditText.getText().toString();
-                if (StringSet.isInSet(input)) {
-                    // Proceed to next screen
-                    //Intent object is created
-                    Intent intent = new Intent(MainActivity.this, GetLocationActivity.class);
-                    //Next activity is started
-                    startActivity(intent);
+        //Checks user input
+        button.setOnClickListener(view -> {
+            String input = Objects.requireNonNull(textInputEditText.getText()).toString();
+            if (StringSet.isInSet(input)) {
+                // Proceed to next screen
+                //Intent object is created
+                Intent intent = new Intent(MainActivity.this, GetLocationActivity.class);
+                //Next activity is started
+                startActivity(intent);
 
-                } else {
-                    textInputLayout.setError("Enter 6-digit order number");
-                }
+            } else {
+                textInputLayout.setError("Enter 6-digit order number");
             }
         });
 

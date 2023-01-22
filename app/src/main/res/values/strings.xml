@@ -12,4 +12,6 @@
     <string name="third_instruction2">Your order will arrive soon.</string>
     <string name="fourth_instruction1">During the delivery, the drone will land, release your package, and then take off. Please remain at least 10 feet away from the landing site during delivery.</string>
     <string name="previous_instruction">Previous</string>
+    <string name="get_location">Get Location</string>
+    <string name="location_display">Location Display</string>
 </resources>
