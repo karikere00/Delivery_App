@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Delivery App</string>
     <string name="verbutton_name">Verify</string>
-    <string name="enter_code">Enter 6-digit Order Number</string>
+    <string name="enter_code">Please Enter 6-digit Order Number</string>
     <string name="next_button">Next</string>
     <string name="first_instruction1">Congratulations! You have successfully ordered a delivery!</string>
     <string name="first_instruction2">Please follow the next steps!</string>
@@ -14,4 +14,8 @@
     <string name="previous_instruction">Previous</string>
     <string name="get_location">Get Location</string>
     <string name="location_display">Location Display</string>
+    <string name="phone_number">Please Enter Phone Number</string>
+    <string name="verification_failed">Please Enter Phone Number</string>
+    <string name="verification_failed_error">Verification failed! Please try again.</string>
+
 </resources>
